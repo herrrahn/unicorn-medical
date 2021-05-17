@@ -1,0 +1,255 @@
+{
+  "items": [
+    {
+      "tags": [
+        "javascript"
+      ],
+      "owner": {
+        "reputation": 569,
+        "user_id": 10908002,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/f2bef13074be8812eb08c79d4fb79b5e?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Sackadelic",
+        "link": "https://stackoverflow.com/users/10908002/sackadelic"
+      },
+      "is_answered": false,
+      "view_count": 5,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1621266086,
+      "creation_date": 1621266086,
+      "question_id": 67572890,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572890/make-a-checkbox-radio-label-bold-on-check-with-javascript",
+      "title": "Make a checkbox / radio label bold on check with JavaScript"
+    },
+    {
+      "tags": [
+        "javascript",
+        "algorithm",
+        "web",
+        "ejs"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 15944934,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/b95b0129f9e92c62124fbf405c31d827?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tsvetomir Ivanov",
+        "link": "https://stackoverflow.com/users/15944934/tsvetomir-ivanov"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1621265792,
+      "creation_date": 1621231572,
+      "last_edit_date": 1621233579,
+      "question_id": 67564690,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67564690/im-trying-to-use-the-logic-to-calculate-periods-between-dates-using-javascript-a",
+      "title": "Im trying to use the logic to calculate periods between dates using JavaScript and EJS"
+    },
+    {
+      "tags": [
+        "javascript"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 15952395,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/a/AATXAJz2wiGuiJHfr0o3JgkNBUIGAdwgPxui06OuJypO=k-s128",
+        "display_name": "Yash Sharma",
+        "link": "https://stackoverflow.com/users/15952395/yash-sharma"
+      },
+      "is_answered": false,
+      "view_count": 12,
+      "answer_count": 0,
+      "score": -2,
+      "last_activity_date": 1621265717,
+      "creation_date": 1621264450,
+      "last_edit_date": 1621265717,
+      "question_id": 67572440,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572440/helper-functions-not-working-in-javascript",
+      "title": "Helper Functions not working in Javascript"
+    },
+    {
+      "tags": [
+        "javascript",
+        "tableau-api"
+      ],
+      "owner": {
+        "reputation": 27,
+        "user_id": 5190809,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9208ac6a6b62054fafd718099f51dd01?s=128&d=identicon&r=PG",
+        "display_name": "530529",
+        "link": "https://stackoverflow.com/users/5190809/530529"
+      },
+      "is_answered": false,
+      "view_count": 13,
+      "answer_count": 0,
+      "score": -1,
+      "last_activity_date": 1621265473,
+      "creation_date": 1621265473,
+      "question_id": 67572729,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572729/need-to-output-a-log-file-using-javascript",
+      "title": "Need to output a log file using Javascript?"
+    },
+    {
+      "tags": [
+        "javascript"
+      ],
+      "owner": {
+        "reputation": 29,
+        "user_id": 15648257,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-Yz_nv6ozBqk/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck7vW_4o3NMEmvaylh69G3An2yEOw/s96-c/photo.jpg?sz=128",
+        "display_name": "ask_question_alex alex",
+        "link": "https://stackoverflow.com/users/15648257/ask-question-alex-alex"
+      },
+      "is_answered": false,
+      "view_count": 19,
+      "answer_count": 3,
+      "score": 0,
+      "last_activity_date": 1621265377,
+      "creation_date": 1621264996,
+      "question_id": 67572599,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572599/how-to-split-text-in-javascript-into-paragraphs",
+      "title": "How to split text in javascript into paragraphs?"
+    },
+    {
+      "tags": [
+        "javascript",
+        "text",
+        "filereader"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 15952481,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gg4dFwXaYCeDvaUGDxw_eRONrpov0ikpkecswEZ=k-s128",
+        "display_name": "Sylja Parra",
+        "link": "https://stackoverflow.com/users/15952481/sylja-parra"
+      },
+      "is_answered": false,
+      "view_count": 6,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1621265154,
+      "creation_date": 1621265154,
+      "question_id": 67572638,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572638/read-a-text-file-and-save-it-into-a-list-javascript",
+      "title": "Read a text file and save it into a list (JavaScript)"
+    },
+    {
+      "tags": [
+        "javascript",
+        "blazor",
+        "asp.net-blazor"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 13338612,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/30e902c9e5705ec90a811869157d3f05?s=128&d=identicon&r=PG&f=1",
+        "display_name": "thijnalbers",
+        "link": "https://stackoverflow.com/users/13338612/thijnalbers"
+      },
+      "is_answered": false,
+      "view_count": 8,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1621265067,
+      "creation_date": 1621265067,
+      "question_id": 67572618,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572618/blazor-framework-javascript-removes-events-from-page-javascript",
+      "title": "Blazor framework JavaScript removes events from page JavaScript"
+    },
+    {
+      "tags": [
+        "javascript",
+        "html",
+        "typeerror"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 13752247,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a7392eabb2bfa9c99017ee24cf6237a2?s=128&d=identicon&r=PG&f=1",
+        "display_name": "acerblaze",
+        "link": "https://stackoverflow.com/users/13752247/acerblaze"
+      },
+      "is_answered": false,
+      "view_count": 12,
+      "answer_count": 0,
+      "score": -3,
+      "last_activity_date": 1621265041,
+      "creation_date": 1621263344,
+      "last_edit_date": 1621265041,
+      "question_id": 67572119,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572119/javascript-shopping-cart-uncaught-typeerror",
+      "title": "Javascript Shopping cart Uncaught TypeError"
+    },
+    {
+      "tags": [
+        "javascript",
+        "canvas",
+        "konvajs",
+        "drawimage",
+        "2d-context-api"
+      ],
+      "owner": {
+        "reputation": 487,
+        "user_id": 10064459,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/vLrZ6.jpg?s=128&g=1",
+        "display_name": "soalrib",
+        "link": "https://stackoverflow.com/users/10064459/soalrib"
+      },
+      "is_answered": false,
+      "view_count": 9,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1621263921,
+      "creation_date": 1621263921,
+      "question_id": 67572294,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67572294/canvas-drawimage-with-high-quality-javascript",
+      "title": "Canvas drawImage with high quality - Javascript"
+    },
+    {
+      "tags": [
+        "javascript"
+      ],
+      "owner": {
+        "reputation": 51,
+        "user_id": 15821614,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/rqbsi.jpg?s=128&g=1",
+        "display_name": "collin ter steege",
+        "link": "https://stackoverflow.com/users/15821614/collin-ter-steege"
+      },
+      "is_answered": false,
+      "view_count": 30,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1621263893,
+      "creation_date": 1621244604,
+      "last_edit_date": 1621263893,
+      "question_id": 67567357,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67567357/stopping-scroll-to-top-after-javascript-execution",
+      "title": "stopping scroll to top after javascript execution"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 300,
+  "quota_remaining": 298
+}
