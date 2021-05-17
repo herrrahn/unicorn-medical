@@ -1,6 +1,9 @@
+
+import {of as observableOf, Observable} from 'rxjs';
+
+import {catchError, map} from 'rxjs/operators';
 import {Injectable} from "@angular/core";
 import {Http, Response} from "@angular/http";
-import {Observable} from "rxjs";
 
 export interface ISearchResultItem  {
     answer_count: number;
@@ -27,12 +30,12 @@ export class SearchService {
     }
 
     search(keyword: string): Observable<JSON> {
-      return this.http.get('assets/javascript.json').map((res: Response) => {
+      return this.http.get('assets/javascript.json').pipe(map((res: Response) => {
               const data = res.json();
               console.log("API USAGE: " + data.quota_remaining + " of " + data.quota_max + " requests available" );
               return data;
-          })
-          .catch((err: Response) => Observable.of(err.json()));
+          }),
+          catchError((err: Response) => observableOf(err.json())),);
 
         // return this.http.get(SearchService.apiUrl + keyword)
         //     .map((res: Response) => {
