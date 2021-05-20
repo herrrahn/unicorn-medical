@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="card-header-image"
+         [style.background-image]="'url(assets/images/' + findWeather() + '.png)'"></div>
+    <mat-card-title id="cardTitle">München - {{findWeather()}}</mat-card-title>
+    <mat-card-subtitle id="cardSubTitle">{{weatherData?.Datum}} - {{weatherData?.Zeit}}</mat-card-subtitle>
+
+  </mat-card-header>
+  <mat-card-content>
+    <div class="container-card" id="cardContent">
+      <img src="assets/images/thermometer.png" class="img-card">
+      <p *ngIf="weatherData" class="margin-left-10">{{weatherData["Temp. A."]}}°C | {{weatherData["Temp. 3"]}}°F</p>
+    </div>
+    <div class="container-card" id="cardContainer">
+      <img src="assets/images/wind.png" class="img-card">
+      <p class="margin-left-10">{{weatherData?.Wind}}km/h</p>
+      <img src="assets/images/north.png" [style.transform]="'rotate(' + weatherData?.Richtung + 'deg)'" class="img-card margin-left-10">
+    </div>
+  </mat-card-content>
+</mat-card>

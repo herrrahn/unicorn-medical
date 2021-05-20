@@ -1,0 +1,15 @@
+@import "assets/sass/modules/variables";
+
+button {
+  border: 1px solid $gray-silver;
+}
+
+.img-card {
+  height: 32px;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+}
+

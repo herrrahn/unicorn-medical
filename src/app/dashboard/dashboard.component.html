@@ -1,8 +1,33 @@
-<p>
-  Dashboard Komponente...
-</p>
-<div class="rrr-flex">
-  <div class="margin-5 test">a</div>
-  <div class="margin-5 test">b</div>
-  <div class="margin-5 test">c</div>
+<div class="dashboard-main">
+  <div class="dashboard-title">
+    <h2>
+      Dashboard stack overflow
+    </h2>
+  </div>
+
+  <div class="dashboard-content">
+    <div class="margin-5">
+      <h5>Zehn neuesten Fragen zum Thema <b>TypeScript</b></h5>
+      <app-card *ngFor="let ts of typeScript" [searchResultItem]="ts"></app-card>
+    </div>
+
+    <div class="margin-5">
+      <h5>Zehn neuesten Fragen zum Thema <b>Angular2</b></h5>
+      <app-card *ngFor="let a2 of angular2" [searchResultItem]="a2"></app-card>
+    </div>
+
+    <div class="margin-5">
+      <h5>Zehn neuesten Fragen zum Thema <b>Weather</b></h5>
+      <div *ngFor="let wi of weatherInfo">
+        <ng-template [ngIf]="fromStackOverflow(wi)" [ngIfElse]="fromWeatherAPI">
+          <app-card [searchResultItem]="wi"></app-card>
+        </ng-template>
+
+        <ng-template #fromWeatherAPI>
+          <app-weather-card [weatherData]="wi"></app-weather-card>
+        </ng-template>
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -1,0 +1,16 @@
+@import "assets/sass/modules/variables";
+
+button {
+  border: 1px solid $gray-silver;
+}
+.card-content {
+  height: 3rem;
+}
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}

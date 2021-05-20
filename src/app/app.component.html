@@ -1,26 +1,16 @@
-<div id="appWrapper">
-
-  <div class='appWrapperInner'>
-    <!-- sidebar -->
-    <div class="sidebar sidebar--left hidden-print sidebar--left--open sidebar--left--mobile--open">
-      <div class="sidebar__container scrolling__container">
-        <ae-main-navigation></ae-main-navigation>
-      </div>
-    </div>
-    <!-- / sidebar -->
-    <div class="app-content pushed-right pushed-right--mobile">
-
-      <!-- top navbar -->
-      <ae-navbar></ae-navbar>
-
-      <!-- main content -->
-      <div class="main-content">
-        <div class="page-content">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-
-    </div>
+<nav>
+  <div class="sidebar">
+    <div><img class="logo" src="assets/images/logo.png"></div>
+    <a [class.active]="activePage == 'dashboard'" [routerLink]="['dashboard']">Dashboard</a>
+    <a [class.active]="activePage == 'search'" [routerLink]="['search']">Ärzte</a>
+    <a [class.active]="activePage == 'help'" [routerLink]="['help']">Hilfe</a>
   </div>
+</nav>
 
+<!-- Page content -->
+<div class="content">
+  <router-outlet></router-outlet>
 </div>
+
+
+

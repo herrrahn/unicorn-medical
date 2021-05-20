@@ -1,0 +1,13 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="card-header-image" [style.background-image] = "'url(' + searchResultItem?.owner?.profile_image +')'"></div>
+    <mat-card-title id="cardTitle">{{searchResultItem?.owner.display_name}}</mat-card-title>
+    <mat-card-subtitle id="cardSubTitle">{{convertEpochToDate(searchResultItem?.creation_date) | date: 'dd.MM.yy HH:mm'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content id="cardContent" class="card-content">
+    <p>{{searchResultItem?.title}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="openInNewWindow(searchResultItem?.link)" target="_blank" class="btn-danger"  mat-button title="Ansehen im Stack Overflow">Ansehen</button>
+  </mat-card-actions>
+</mat-card>

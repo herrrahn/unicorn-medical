@@ -1,50 +1,59 @@
+import {Observable} from 'rxjs';
 
-import {of as observableOf, Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
-import {catchError, map} from 'rxjs/operators';
-import {Injectable} from "@angular/core";
-import {Http, Response} from "@angular/http";
+export interface IOwner {
+  reputation: number;
+  user_id: number;
+  user_type: string;
+  profile_image: string;
+  display_name: string;
+  link: string;
+}
 
-export interface ISearchResultItem  {
-    answer_count: number;
-    closed_date: number;
-    closed_reason: string;
-    creation_date: number;
-    is_answered: boolean;
-    last_activity_date: number;
-    link: string;
-    score: number;
-    tags: Array<string>;
-    title: string;
-    view_count: number;
+export interface IItem {
+  tags: string[];
+  owner: IOwner;
+  is_answered: boolean;
+  view_count: number;
+  answer_count: number;
+  score: number;
+  last_activity_date: number;
+  creation_date: number;
+  question_id: number;
+  content_license: string;
+  link: string;
+  title: string;
+  last_edit_date?: number;
+}
+
+export interface ISearchResultItem {
+  items: IItem[];
+  has_more: boolean;
+  quota_max: number;
+  quota_remaining: number;
 }
 
 @Injectable()
 export class SearchService {
 
-    private static readonly apiUrl =
-        "https://api.stackexchange.com/2.2/search?pagesize=10&order=desc&sort=activity&site=stackoverflow&intitle=";
+  private static readonly apiUrl =
+    'https://api.stackexchange.com/2.2/search?pagesize=10&order=desc&sort=activity&site=stackoverflow&intitle=';
 
-    constructor(private http: Http) {
+  constructor(private http: HttpClient) {
 
-    }
+  }
 
-    search(keyword: string): Observable<JSON> {
-      return this.http.get('assets/javascript.json').pipe(map((res: Response) => {
-              const data = res.json();
-              console.log("API USAGE: " + data.quota_remaining + " of " + data.quota_max + " requests available" );
-              return data;
-          }),
-          catchError((err: Response) => observableOf(err.json())),);
-
-        // return this.http.get(SearchService.apiUrl + keyword)
-        //     .map((res: Response) => {
-        //         let data = res.json();
-        //         console.log("API USAGE: " + data.quota_remaining + " of " + data.quota_max + " requests available" );
-        //         return data;
-        //     })
-        //     .catch((err: Response) => Observable.of(err.json()));
-    }
+  search(keyword: string, pageSize: number): Observable<IItem[]> {
+    // return this.http.get<ISearchResultItem>('assets/javascript.json').pipe(
+    //   map( value => {return value.items})
+    // );
+    return this.http.get<ISearchResultItem>(`https://api.stackexchange.com/2.2/search?pagesize=${pageSize}&order=desc&sort=activity&site=stackoverflow&intitle=${keyword}`).pipe(
+      map( value => {return value.items})
+    );
+  }
 
 
 }
